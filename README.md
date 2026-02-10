@@ -47,9 +47,9 @@
 
 ### **Phase 1: Foundation (Core Signaling)** 🏗️
 - [x] Initial Repository Setup.
-- [ ] Spring Boot WebSocket signaling (Offer/Answer/ICE).
-- [ ] 1:1 WebRTC video tiles in React.
-- [ ] Integrated STUN/TURN configuration.
+- [x] Spring Boot WebSocket signaling (Offer/Answer/ICE).
+- [x] 1:1 WebRTC video tiles in React.
+- [x] Integrated STUN/TURN configuration.
 
 ### **Phase 2: Live Captions (ASR Pipeline)** 🎙️
 - [ ] Independent ASR microservice integration.
