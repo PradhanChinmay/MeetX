@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MeetxApplication<meetx>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.videoapp.meetx.MeetxApplication",
+            "projectName": "meetx",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,786 @@
+2026-01-20 00:37:13.506 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-20 00:37:13.610 [main] INFO  com.videoapp.meetx.MeetxApplication - Starting MeetxApplication using Java 25.0.1 with PID 9520 (D:\MeetX\meetx\target\classes started by CHINMAYA in D:\MeetX\meetx)
+2026-01-20 00:37:13.613 [main] INFO  com.videoapp.meetx.MeetxApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 00:37:17.147 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 00:37:17.178 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 00:37:17.183 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 00:37:17.184 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-20 00:37:17.309 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 00:37:17.311 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3562 ms
+2026-01-20 00:37:18.320 [main] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ws/signaling] in 'webSocketHandlerMapping'
+2026-01-20 00:37:18.999 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-01-20 00:37:19.065 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1841adbc-8d43-44cb-b1c5-012251e26c1c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-20 00:37:19.083 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-20 00:37:20.111 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 00:37:20.160 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 00:37:20.192 [main] INFO  com.videoapp.meetx.MeetxApplication - Started MeetxApplication in 8.169 seconds (process running for 9.681)
+2026-01-20 00:37:21.427 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 00:37:21.429 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 00:37:21.432 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-20 00:37:36.414 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 00:37:36.420 [http-nio-8080-exec-2] INFO  c.videoapp.meetx.service.RoomService - Created room: d8_nn1ztyhZ317YmlTURCA with name: test
+2026-01-20 00:37:36.429 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Room created successfully: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:37:43.243 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:37:43.243 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:37:43.367 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:37:43.367 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=205383cc-3a59-292b-53af-d18f303266b6, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:37:43.367 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:37:43.369 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 205383cc-3a59-292b-53af-d18f303266b6
+2026-01-20 00:37:43.383 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=cca4e4b9-d7a2-b37d-7a43-c70e6426c654, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:37:43.385 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: cca4e4b9-d7a2-b37d-7a43-c70e6426c654
+2026-01-20 00:37:43.400 [http-nio-8080-exec-4] INFO  c.v.meetx.service.ParticipantService - Created participant: dc7dc021-813c-4535-9cde-7ef01f292581 in room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:37:43.402 [http-nio-8080-exec-4] INFO  c.videoapp.meetx.service.RoomService - Added participant: dc7dc021-813c-4535-9cde-7ef01f292581 to room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:37:43.427 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - Participant dc7dc021-813c-4535-9cde-7ef01f292581 joined room d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:13.815 [http-nio-8080-exec-5] INFO  c.v.meetx.controller.RoomController - Joining room: test
+2026-01-20 00:38:13.832 [http-nio-8080-exec-5] ERROR c.v.m.e.GlobalExceptionHandler - Room not found: Room not found
+2026-01-20 00:38:29.094 [http-nio-8080-exec-6] INFO  c.v.meetx.controller.RoomController - Joining room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:29.100 [http-nio-8080-exec-6] INFO  c.v.meetx.controller.RoomController - Join token generated for room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:31.105 [http-nio-8080-exec-7] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:31.107 [http-nio-8080-exec-7] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:31.171 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3a1bb489-9559-1c9d-87f9-6ffb40480531, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:31.174 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 3a1bb489-9559-1c9d-87f9-6ffb40480531
+2026-01-20 00:38:31.197 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:31.197 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:31.203 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=cdac36ea-ca2c-9abd-1737-a489985b6466, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:31.203 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: cdac36ea-ca2c-9abd-1737-a489985b6466
+2026-01-20 00:38:31.211 [http-nio-8080-exec-8] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.InvalidTokenException: Invalid or expired token
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:44)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:38:33.080 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=cdac36ea-ca2c-9abd-1737-a489985b6466, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 00:38:33.083 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: cdac36ea-ca2c-9abd-1737-a489985b6466 with status: CloseStatus[code=1000, reason=null]
+2026-01-20 00:38:36.828 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=cca4e4b9-d7a2-b37d-7a43-c70e6426c654, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:38:36.828 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=205383cc-3a59-292b-53af-d18f303266b6, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:38:36.864 [http-nio-8080-exec-1] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: cca4e4b9-d7a2-b37d-7a43-c70e6426c654 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:38:36.870 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 205383cc-3a59-292b-53af-d18f303266b6 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:38:36.870 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Removed participant: dc7dc021-813c-4535-9cde-7ef01f292581 from room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:36.881 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Removed room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:36.885 [http-nio-8080-exec-1] INFO  c.v.meetx.service.ParticipantService - Removed participant: dc7dc021-813c-4535-9cde-7ef01f292581 from room: d8_nn1ztyhZ317YmlTURCA
+2026-01-20 00:38:38.421 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:38.421 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:38.436 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=37a3612f-e644-b98e-99ba-4725b5c10573, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:38.438 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 37a3612f-e644-b98e-99ba-4725b5c10573
+2026-01-20 00:38:38.442 [http-nio-8080-exec-2] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.RoomNotFoundException: Room not found
+	at com.videoapp.meetx.service.RoomService.getRoom(RoomService.java:54)
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:29)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:38:38.482 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:38.482 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:38.489 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=53f781f3-b1d4-8d7e-438d-046034b6d70a, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:38.491 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 53f781f3-b1d4-8d7e-438d-046034b6d70a
+2026-01-20 00:38:38.495 [http-nio-8080-exec-3] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.RoomNotFoundException: Room not found
+	at com.videoapp.meetx.service.RoomService.getRoom(RoomService.java:54)
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:29)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:38:40.162 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=53f781f3-b1d4-8d7e-438d-046034b6d70a, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 00:38:40.169 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 53f781f3-b1d4-8d7e-438d-046034b6d70a with status: CloseStatus[code=1000, reason=null]
+2026-01-20 00:38:48.072 [http-nio-8080-exec-5] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 00:38:48.072 [http-nio-8080-exec-5] INFO  c.videoapp.meetx.service.RoomService - Created room: QZP4bpgCUX_U2ABaq6WLaw with name: test
+2026-01-20 00:38:48.072 [http-nio-8080-exec-5] INFO  c.v.meetx.controller.RoomController - Room created successfully: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.538 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:49.542 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:49.548 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3116dd31-d7fa-a787-49a0-6e1c2ef6ea78, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:49.548 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 3116dd31-d7fa-a787-49a0-6e1c2ef6ea78
+2026-01-20 00:38:49.558 [http-nio-8080-exec-6] INFO  c.v.meetx.service.ParticipantService - Created participant: 0b2daaee-485d-45ff-9664-b9a59715b71e in room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.558 [http-nio-8080-exec-6] INFO  c.videoapp.meetx.service.RoomService - Added participant: 0b2daaee-485d-45ff-9664-b9a59715b71e to room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.604 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 0b2daaee-485d-45ff-9664-b9a59715b71e joined room QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.621 [http-nio-8080-exec-7] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:49.622 [http-nio-8080-exec-7] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:49.634 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=7263f0df-a6b7-a57d-4c89-a7d399356ab4, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:49.636 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 7263f0df-a6b7-a57d-4c89-a7d399356ab4
+2026-01-20 00:38:49.640 [http-nio-8080-exec-8] INFO  c.v.meetx.service.ParticipantService - Created participant: cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 in room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.640 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Added participant: cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 to room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:49.645 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - Participant cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 joined room QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:57.893 [http-nio-8080-exec-9] INFO  c.v.meetx.controller.RoomController - Joining room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:57.895 [http-nio-8080-exec-9] INFO  c.v.meetx.controller.RoomController - Join token generated for room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:38:59.388 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:59.388 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:59.399 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=d60c761e-15fb-c7a6-1012-1d48ed06c942, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:59.402 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: d60c761e-15fb-c7a6-1012-1d48ed06c942
+2026-01-20 00:38:59.404 [http-nio-8080-exec-10] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.InvalidTokenException: Invalid or expired token
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:44)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:38:59.451 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:38:59.459 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:38:59.470 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=1303ab6e-070f-bc83-728f-747a0a1907b1, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:38:59.472 [http-nio-8080-exec-1] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 1303ab6e-070f-bc83-728f-747a0a1907b1
+2026-01-20 00:38:59.474 [http-nio-8080-exec-1] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.InvalidTokenException: Invalid or expired token
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:44)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:39:05.094 [http-nio-8080-exec-2] INFO  c.videoapp.meetx.service.RoomService - Removed participant: cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 from room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:39:05.101 [http-nio-8080-exec-2] INFO  c.v.meetx.service.ParticipantService - Removed participant: cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 from room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:39:05.103 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - Participant cd2c6bdb-cea4-4620-9946-ac1aa47bdb68 left room QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:39:05.104 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=7263f0df-a6b7-a57d-4c89-a7d399356ab4, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 00:39:05.106 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 7263f0df-a6b7-a57d-4c89-a7d399356ab4 with status: CloseStatus[code=1000, reason=null]
+2026-01-20 00:39:08.648 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=1303ab6e-070f-bc83-728f-747a0a1907b1, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 00:39:08.662 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 1303ab6e-070f-bc83-728f-747a0a1907b1 with status: CloseStatus[code=1000, reason=null]
+2026-01-20 00:40:04.551 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3a1bb489-9559-1c9d-87f9-6ffb40480531, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:04.553 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 3a1bb489-9559-1c9d-87f9-6ffb40480531 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:04.553 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=d60c761e-15fb-c7a6-1012-1d48ed06c942, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:04.553 [http-nio-8080-exec-5] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: d60c761e-15fb-c7a6-1012-1d48ed06c942 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:06.129 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3116dd31-d7fa-a787-49a0-6e1c2ef6ea78, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:06.129 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=37a3612f-e644-b98e-99ba-4725b5c10573, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:06.135 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 3116dd31-d7fa-a787-49a0-6e1c2ef6ea78 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:06.135 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 37a3612f-e644-b98e-99ba-4725b5c10573 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:40:06.137 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Removed participant: 0b2daaee-485d-45ff-9664-b9a59715b71e from room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:40:06.141 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Removed room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:40:06.141 [http-nio-8080-exec-8] INFO  c.v.meetx.service.ParticipantService - Removed participant: 0b2daaee-485d-45ff-9664-b9a59715b71e from room: QZP4bpgCUX_U2ABaq6WLaw
+2026-01-20 00:41:04.874 [http-nio-8080-exec-9] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 00:41:04.876 [http-nio-8080-exec-9] INFO  c.videoapp.meetx.service.RoomService - Created room: wJWIe49vAWLY9KV0n6nxrQ with name: test
+2026-01-20 00:41:04.876 [http-nio-8080-exec-9] INFO  c.v.meetx.controller.RoomController - Room created successfully: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:06.815 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:41:06.815 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:41:06.829 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e82bbb83-d1e1-1ab2-9833-60a058ef4e34, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:41:06.835 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: e82bbb83-d1e1-1ab2-9833-60a058ef4e34
+2026-01-20 00:41:06.835 [http-nio-8080-exec-10] INFO  c.v.meetx.service.ParticipantService - Created participant: dadf3594-9076-4e2c-8f39-09844cc1a33b in room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:06.835 [http-nio-8080-exec-10] INFO  c.videoapp.meetx.service.RoomService - Added participant: dadf3594-9076-4e2c-8f39-09844cc1a33b to room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:06.841 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - Participant dadf3594-9076-4e2c-8f39-09844cc1a33b joined room wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:06.940 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:41:06.951 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:41:07.019 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=7021f638-f9f4-335e-69cf-3aff2f78059d, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:41:07.019 [http-nio-8080-exec-1] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 7021f638-f9f4-335e-69cf-3aff2f78059d
+2026-01-20 00:41:07.025 [http-nio-8080-exec-1] INFO  c.v.meetx.service.ParticipantService - Created participant: 7b1ec7bc-15c8-47b8-b7ae-800048eabb71 in room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:07.036 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Added participant: 7b1ec7bc-15c8-47b8-b7ae-800048eabb71 to room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:07.038 [http-nio-8080-exec-1] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 7b1ec7bc-15c8-47b8-b7ae-800048eabb71 joined room wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:27.742 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=e82bbb83-d1e1-1ab2-9833-60a058ef4e34, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:41:27.744 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=7021f638-f9f4-335e-69cf-3aff2f78059d, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1001, reason=null]
+2026-01-20 00:41:27.760 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: e82bbb83-d1e1-1ab2-9833-60a058ef4e34 with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:41:27.770 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 7021f638-f9f4-335e-69cf-3aff2f78059d with status: CloseStatus[code=1001, reason=null]
+2026-01-20 00:41:27.779 [http-nio-8080-exec-2] WARN  o.s.w.s.h.ExceptionWebSocketHandlerDecorator - Unhandled exception after connection closed for ExceptionWebSocketHandlerDecorator [delegate=LoggingWebSocketHandlerDecorator [delegate=com.videoapp.meetx.handler.SignalingWebSocketHandler@5333f08f]]
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:455)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:223)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:217)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.sendMessage(SignalingWebSocketHandler.java:264)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.lambda$1(SignalingWebSocketHandler.java:276)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.notifyOthersInRoom(SignalingWebSocketHandler.java:276)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.afterConnectionClosed(SignalingWebSocketHandler.java:233)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionClosed(WebSocketHandlerDecorator.java:85)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionClosed(LoggingWebSocketHandlerDecorator.java:72)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionClosed(ExceptionWebSocketHandlerDecorator.java:78)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.onClose(StandardWebSocketHandlerAdapter.java:144)
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:718)
+	at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:626)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:349)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:281)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:41:27.781 [http-nio-8080-exec-3] WARN  o.s.w.s.h.ExceptionWebSocketHandlerDecorator - Unhandled exception after connection closed for ExceptionWebSocketHandlerDecorator [delegate=LoggingWebSocketHandlerDecorator [delegate=com.videoapp.meetx.handler.SignalingWebSocketHandler@5333f08f]]
+java.lang.IllegalStateException: Message will not be sent because the WebSocket session has been closed
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:455)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:223)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:217)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.sendMessage(SignalingWebSocketHandler.java:264)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.lambda$1(SignalingWebSocketHandler.java:276)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.notifyOthersInRoom(SignalingWebSocketHandler.java:276)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.afterConnectionClosed(SignalingWebSocketHandler.java:233)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionClosed(WebSocketHandlerDecorator.java:85)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionClosed(LoggingWebSocketHandlerDecorator.java:72)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionClosed(ExceptionWebSocketHandlerDecorator.java:78)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.onClose(StandardWebSocketHandlerAdapter.java:144)
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:718)
+	at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:626)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:349)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:281)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:41:29.442 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:41:29.444 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:41:29.455 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=bb12c06c-40f4-d145-40b7-19697925d298, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:41:29.458 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: bb12c06c-40f4-d145-40b7-19697925d298
+2026-01-20 00:41:29.459 [http-nio-8080-exec-4] INFO  c.v.meetx.service.ParticipantService - Created participant: 65d08cc7-57a2-4226-8f03-a5ca415e41aa in room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:29.461 [http-nio-8080-exec-4] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.RoomFullException: Room is full
+	at com.videoapp.meetx.service.RoomService.addParticipantToRoom(RoomService.java:67)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:100)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:41:29.510 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:41:29.511 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:41:29.519 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=9a995753-e338-03ac-dbbe-cb29966b7d8e, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:41:29.520 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 9a995753-e338-03ac-dbbe-cb29966b7d8e
+2026-01-20 00:41:29.522 [http-nio-8080-exec-6] INFO  c.v.meetx.service.ParticipantService - Created participant: b2fbf3d7-eb86-482c-afe8-7191827d8665 in room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:29.523 [http-nio-8080-exec-6] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.RoomFullException: Room is full
+	at com.videoapp.meetx.service.RoomService.addParticipantToRoom(RoomService.java:67)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:100)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:41:31.876 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=9a995753-e338-03ac-dbbe-cb29966b7d8e, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 00:41:31.877 [http-nio-8080-exec-5] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 9a995753-e338-03ac-dbbe-cb29966b7d8e with status: CloseStatus[code=1000, reason=null]
+2026-01-20 00:41:31.884 [http-nio-8080-exec-5] INFO  c.videoapp.meetx.service.RoomService - Removed participant: b2fbf3d7-eb86-482c-afe8-7191827d8665 from room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:41:31.886 [http-nio-8080-exec-5] INFO  c.v.meetx.service.ParticipantService - Removed participant: b2fbf3d7-eb86-482c-afe8-7191827d8665 from room: wJWIe49vAWLY9KV0n6nxrQ
+2026-01-20 00:42:11.439 [http-nio-8080-exec-8] INFO  c.v.meetx.controller.RoomController - Creating room with name: test-1
+2026-01-20 00:42:11.441 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Created room: gRJiEJ31AAvIn24yF3aZQQ with name: test-1
+2026-01-20 00:42:11.442 [http-nio-8080-exec-8] INFO  c.v.meetx.controller.RoomController - Room created successfully: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.369 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:42:13.369 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:42:13.375 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=ba99c2ac-1cbd-d01d-9980-371d7fcafd93, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:42:13.381 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: ba99c2ac-1cbd-d01d-9980-371d7fcafd93
+2026-01-20 00:42:13.394 [http-nio-8080-exec-9] INFO  c.v.meetx.service.ParticipantService - Created participant: 0a2b0d5e-1fe6-4179-b508-86098e2a270a in room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.397 [http-nio-8080-exec-9] INFO  c.videoapp.meetx.service.RoomService - Added participant: 0a2b0d5e-1fe6-4179-b508-86098e2a270a to room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.403 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 0a2b0d5e-1fe6-4179-b508-86098e2a270a joined room gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.445 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:42:13.446 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:42:13.455 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=f37cc1e3-ee43-729d-e463-fa902dc5e9e9, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:42:13.457 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: f37cc1e3-ee43-729d-e463-fa902dc5e9e9
+2026-01-20 00:42:13.463 [http-nio-8080-exec-1] INFO  c.v.meetx.service.ParticipantService - Created participant: 95cff239-0710-4476-82c5-d377f8cf6cea in room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.463 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Added participant: 95cff239-0710-4476-82c5-d377f8cf6cea to room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:13.465 [http-nio-8080-exec-1] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 95cff239-0710-4476-82c5-d377f8cf6cea joined room gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:29.047 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Joining room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:29.052 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Join token generated for room: gRJiEJ31AAvIn24yF3aZQQ
+2026-01-20 00:42:33.666 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:42:33.668 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:42:33.681 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e260c9c9-22b9-36cd-eb16-4d4b3b6b077a, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:42:33.685 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: e260c9c9-22b9-36cd-eb16-4d4b3b6b077a
+2026-01-20 00:42:33.689 [http-nio-8080-exec-3] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.InvalidTokenException: Invalid or expired token
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:44)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 00:42:33.724 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@6aae0e6f
+2026-01-20 00:42:33.728 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 00:42:33.738 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=b409fb8a-8c0d-4461-946f-4960ca581867, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 00:42:33.740 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: b409fb8a-8c0d-4461-946f-4960ca581867
+2026-01-20 00:42:33.754 [http-nio-8080-exec-4] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.InvalidTokenException: Invalid or expired token
+	at com.videoapp.meetx.service.TokenService.validateToken(TokenService.java:44)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:94)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 01:07:30.014 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-20 01:07:30.115 [main] INFO  com.videoapp.meetx.MeetxApplication - Starting MeetxApplication using Java 25.0.1 with PID 26992 (D:\MeetX\meetx\target\classes started by CHINMAYA in D:\MeetX\meetx)
+2026-01-20 01:07:30.118 [main] INFO  com.videoapp.meetx.MeetxApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 01:07:33.696 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 01:07:33.725 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:07:33.730 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 01:07:33.731 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-20 01:07:33.843 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 01:07:33.845 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3578 ms
+2026-01-20 01:07:34.922 [main] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ws/signaling] in 'webSocketHandlerMapping'
+2026-01-20 01:07:35.529 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-01-20 01:07:35.604 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5d8a654-8951-4b1a-84b5-d388b08bbfa3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-20 01:07:35.624 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-20 01:07:36.492 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:07:36.527 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 01:07:36.579 [main] INFO  com.videoapp.meetx.MeetxApplication - Started MeetxApplication in 8.067 seconds (process running for 9.519)
+2026-01-20 01:07:37.620 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 01:07:37.621 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 01:07:37.625 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-20 01:08:27.825 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 01:08:27.839 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Created room: bq28sNZtNQyIdC3SrypLqQ with name: test
+2026-01-20 01:08:27.854 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Room created successfully: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:29.978 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@788e3702
+2026-01-20 01:08:29.986 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:08:30.133 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=310a197d-26e7-8fed-0b0b-1cb5ca016876, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:08:30.139 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 310a197d-26e7-8fed-0b0b-1cb5ca016876
+2026-01-20 01:08:30.139 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@788e3702
+2026-01-20 01:08:30.141 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:08:30.153 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=cecf5378-acff-bef8-d933-bc6dbc891db2, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:08:30.153 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: cecf5378-acff-bef8-d933-bc6dbc891db2
+2026-01-20 01:08:30.167 [http-nio-8080-exec-2] INFO  c.v.meetx.service.ParticipantService - Created participant: 22ca618d-de08-4dce-bd39-563d83b251f8 in room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:30.167 [http-nio-8080-exec-2] INFO  c.videoapp.meetx.service.RoomService - Added participant: 22ca618d-de08-4dce-bd39-563d83b251f8 to room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:30.190 [http-nio-8080-exec-2] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 22ca618d-de08-4dce-bd39-563d83b251f8 joined room bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:43.197 [http-nio-8080-exec-8] INFO  c.v.meetx.controller.RoomController - Joining room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:43.203 [http-nio-8080-exec-8] INFO  c.v.meetx.controller.RoomController - Join token generated for room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:45.446 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@788e3702
+2026-01-20 01:08:45.449 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:08:45.461 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=16eb6d22-0b98-75e1-fb4b-b52811376dfd, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:08:45.463 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 16eb6d22-0b98-75e1-fb4b-b52811376dfd
+2026-01-20 01:08:45.466 [http-nio-8080-exec-6] INFO  c.v.meetx.service.ParticipantService - Created participant: 81b73ea5-a78f-4eae-baef-9fac2c64a897 in room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:45.466 [http-nio-8080-exec-6] INFO  c.videoapp.meetx.service.RoomService - Added participant: 81b73ea5-a78f-4eae-baef-9fac2c64a897 to room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:45.482 [http-nio-8080-exec-6] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 81b73ea5-a78f-4eae-baef-9fac2c64a897 joined room bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:45.498 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@788e3702
+2026-01-20 01:08:45.498 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:08:45.510 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=444f2b0a-be62-6ab3-95d2-2f1557818a76, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:08:45.513 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 444f2b0a-be62-6ab3-95d2-2f1557818a76
+2026-01-20 01:08:45.513 [http-nio-8080-exec-10] INFO  c.v.meetx.service.ParticipantService - Created participant: c67313ef-3604-4482-a95b-e874f4e293e1 in room: bq28sNZtNQyIdC3SrypLqQ
+2026-01-20 01:08:45.513 [http-nio-8080-exec-10] ERROR c.v.m.h.SignalingWebSocketHandler - Error handling join: 
+com.videoapp.meetx.exception.RoomFullException: Room is full
+	at com.videoapp.meetx.service.RoomService.addParticipantToRoom(RoomService.java:79)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleJoin(SignalingWebSocketHandler.java:100)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleMessage(SignalingWebSocketHandler.java:66)
+	at com.videoapp.meetx.handler.SignalingWebSocketHandler.handleTextMessage(SignalingWebSocketHandler.java:49)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-20 01:22:39.455 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-20 01:22:39.624 [main] INFO  com.videoapp.meetx.MeetxApplication - Starting MeetxApplication using Java 25.0.1 with PID 27208 (D:\MeetX\meetx\target\classes started by CHINMAYA in D:\MeetX\meetx)
+2026-01-20 01:22:39.626 [main] INFO  com.videoapp.meetx.MeetxApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 01:22:42.923 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 01:22:42.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:22:42.953 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 01:22:42.955 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-20 01:22:43.072 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 01:22:43.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3335 ms
+2026-01-20 01:22:44.207 [main] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ws/signaling] in 'webSocketHandlerMapping'
+2026-01-20 01:22:44.938 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-01-20 01:22:45.011 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d0951bde-6767-4c17-85c8-83109f308527
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-20 01:22:45.033 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-20 01:22:45.955 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:22:46.002 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 01:22:46.038 [main] INFO  com.videoapp.meetx.MeetxApplication - Started MeetxApplication in 7.931 seconds (process running for 9.31)
+2026-01-20 01:22:47.200 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 01:22:47.201 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 01:22:47.204 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-20 01:23:21.189 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 01:23:21.203 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Created room: aXUGhDmd6LDK-vpNLFkgtw with name: test
+2026-01-20 01:23:21.208 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Room created successfully: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:23:23.161 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@712e787e
+2026-01-20 01:23:23.172 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:23:23.314 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3b26856e-53df-bc76-5587-9ed7f50b734d, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:23:23.314 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 3b26856e-53df-bc76-5587-9ed7f50b734d
+2026-01-20 01:23:23.337 [http-nio-8080-exec-3] INFO  c.v.meetx.service.ParticipantService - Created participant: f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a in room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:23:23.339 [http-nio-8080-exec-3] INFO  c.videoapp.meetx.service.RoomService - Added participant: f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a to room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:23:23.376 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - Participant f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a joined room aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:23:39.920 [http-nio-8080-exec-4] INFO  c.v.meetx.controller.RoomController - Joining room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:23:39.926 [http-nio-8080-exec-4] INFO  c.v.meetx.controller.RoomController - Join token generated for room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:03.470 [http-nio-8080-exec-10] INFO  c.v.meetx.controller.RoomController - Joining room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:03.470 [http-nio-8080-exec-10] INFO  c.v.meetx.controller.RoomController - Join token generated for room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:03.716 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@712e787e
+2026-01-20 01:24:03.716 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:24:03.729 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=b1ce3156-4c12-5935-2d5f-bcb7163967ff, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:24:03.749 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: b1ce3156-4c12-5935-2d5f-bcb7163967ff
+2026-01-20 01:24:03.753 [http-nio-8080-exec-8] INFO  c.v.meetx.service.ParticipantService - Created participant: f51e5816-3e65-4d73-9676-807c8c57048f in room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:03.756 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Added participant: f51e5816-3e65-4d73-9676-807c8c57048f to room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:03.762 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - Participant f51e5816-3e65-4d73-9676-807c8c57048f joined room aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:35.721 [http-nio-8080-exec-9] INFO  c.videoapp.meetx.service.RoomService - Removed participant: f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a from room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:35.740 [http-nio-8080-exec-9] INFO  c.v.meetx.service.ParticipantService - Removed participant: f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a from room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:35.743 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - Participant f10fcdb1-9a97-40a1-b1e6-2e59b6b2786a left room aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:35.754 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3b26856e-53df-bc76-5587-9ed7f50b734d, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:24:35.756 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 3b26856e-53df-bc76-5587-9ed7f50b734d with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:24:41.123 [http-nio-8080-exec-7] INFO  c.videoapp.meetx.service.RoomService - Removed participant: f51e5816-3e65-4d73-9676-807c8c57048f from room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:41.190 [http-nio-8080-exec-7] INFO  c.videoapp.meetx.service.RoomService - Removed room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:41.197 [http-nio-8080-exec-7] INFO  c.v.meetx.service.ParticipantService - Removed participant: f51e5816-3e65-4d73-9676-807c8c57048f from room: aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:41.197 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - Participant f51e5816-3e65-4d73-9676-807c8c57048f left room aXUGhDmd6LDK-vpNLFkgtw
+2026-01-20 01:24:41.200 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=b1ce3156-4c12-5935-2d5f-bcb7163967ff, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:24:41.201 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: b1ce3156-4c12-5935-2d5f-bcb7163967ff with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:25:20.470 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Creating room with name: test-1
+2026-01-20 01:25:20.470 [http-nio-8080-exec-2] INFO  c.videoapp.meetx.service.RoomService - Created room: pihOPDzJh3uYrqjIYi-uSA with name: test-1
+2026-01-20 01:25:20.470 [http-nio-8080-exec-2] INFO  c.v.meetx.controller.RoomController - Room created successfully: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:25.637 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@712e787e
+2026-01-20 01:25:25.639 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:25:25.645 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=fdd8880c-2bb9-05f3-1afc-02a49d703bec, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:25:25.645 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: fdd8880c-2bb9-05f3-1afc-02a49d703bec
+2026-01-20 01:25:25.662 [http-nio-8080-exec-4] INFO  c.v.meetx.service.ParticipantService - Created participant: 9739a08c-4b24-4568-bcbf-6a935269f4e3 in room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:25.665 [http-nio-8080-exec-4] INFO  c.videoapp.meetx.service.RoomService - Added participant: 9739a08c-4b24-4568-bcbf-6a935269f4e3 to room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:25.671 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 9739a08c-4b24-4568-bcbf-6a935269f4e3 joined room pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:34.543 [http-nio-8080-exec-6] INFO  c.v.meetx.controller.RoomController - Joining room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:34.547 [http-nio-8080-exec-6] INFO  c.v.meetx.controller.RoomController - Join token generated for room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:34.796 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@712e787e
+2026-01-20 01:25:34.802 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:25:34.814 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3eb073b2-9dda-a08c-521f-4c8ee49a6274, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:25:34.818 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 3eb073b2-9dda-a08c-521f-4c8ee49a6274
+2026-01-20 01:25:34.828 [http-nio-8080-exec-10] INFO  c.v.meetx.service.ParticipantService - Created participant: b26b6f86-01e2-4acd-b959-a7d9a78ffb11 in room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:34.830 [http-nio-8080-exec-10] INFO  c.videoapp.meetx.service.RoomService - Added participant: b26b6f86-01e2-4acd-b959-a7d9a78ffb11 to room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:25:34.840 [http-nio-8080-exec-10] INFO  c.v.m.h.SignalingWebSocketHandler - Participant b26b6f86-01e2-4acd-b959-a7d9a78ffb11 joined room pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:28:53.575 [http-nio-8080-exec-9] INFO  c.videoapp.meetx.service.RoomService - Removed participant: 9739a08c-4b24-4568-bcbf-6a935269f4e3 from room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:28:53.581 [http-nio-8080-exec-9] INFO  c.v.meetx.service.ParticipantService - Removed participant: 9739a08c-4b24-4568-bcbf-6a935269f4e3 from room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:28:53.583 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 9739a08c-4b24-4568-bcbf-6a935269f4e3 left room pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:28:53.587 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=fdd8880c-2bb9-05f3-1afc-02a49d703bec, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:28:53.587 [http-nio-8080-exec-9] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: fdd8880c-2bb9-05f3-1afc-02a49d703bec with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:29:00.623 [http-nio-8080-exec-7] INFO  c.videoapp.meetx.service.RoomService - Removed participant: b26b6f86-01e2-4acd-b959-a7d9a78ffb11 from room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:29:00.627 [http-nio-8080-exec-7] INFO  c.videoapp.meetx.service.RoomService - Removed room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:29:00.632 [http-nio-8080-exec-7] INFO  c.v.meetx.service.ParticipantService - Removed participant: b26b6f86-01e2-4acd-b959-a7d9a78ffb11 from room: pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:29:00.643 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - Participant b26b6f86-01e2-4acd-b959-a7d9a78ffb11 left room pihOPDzJh3uYrqjIYi-uSA
+2026-01-20 01:29:00.651 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3eb073b2-9dda-a08c-521f-4c8ee49a6274, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:29:00.651 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 3eb073b2-9dda-a08c-521f-4c8ee49a6274 with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:29:08.361 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Creating room with name: test-2
+2026-01-20 01:29:08.361 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Created room: RaypovMk-Km7hks0lV1Ejg with name: test-2
+2026-01-20 01:29:08.363 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Room created successfully: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:29:09.818 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@712e787e
+2026-01-20 01:29:09.824 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:29:09.850 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=8d1d38af-a5bc-4a3b-8ab2-57415d186de8, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:29:09.853 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 8d1d38af-a5bc-4a3b-8ab2-57415d186de8
+2026-01-20 01:29:09.856 [http-nio-8080-exec-3] INFO  c.v.meetx.service.ParticipantService - Created participant: a74b485f-70d5-4603-8c58-b0382c7db3a3 in room: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:29:09.856 [http-nio-8080-exec-3] INFO  c.videoapp.meetx.service.RoomService - Added participant: a74b485f-70d5-4603-8c58-b0382c7db3a3 to room: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:29:09.858 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - Participant a74b485f-70d5-4603-8c58-b0382c7db3a3 joined room RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:31:43.986 [http-nio-8080-exec-4] INFO  c.videoapp.meetx.service.RoomService - Removed participant: a74b485f-70d5-4603-8c58-b0382c7db3a3 from room: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:31:44.027 [http-nio-8080-exec-4] INFO  c.videoapp.meetx.service.RoomService - Removed room: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:31:44.030 [http-nio-8080-exec-4] INFO  c.v.meetx.service.ParticipantService - Removed participant: a74b485f-70d5-4603-8c58-b0382c7db3a3 from room: RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:31:44.033 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - Participant a74b485f-70d5-4603-8c58-b0382c7db3a3 left room RaypovMk-Km7hks0lV1Ejg
+2026-01-20 01:31:44.037 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=8d1d38af-a5bc-4a3b-8ab2-57415d186de8, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:31:44.037 [http-nio-8080-exec-4] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 8d1d38af-a5bc-4a3b-8ab2-57415d186de8 with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:36:12.987 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-20 01:36:13.069 [main] INFO  com.videoapp.meetx.MeetxApplication - Starting MeetxApplication using Java 25.0.1 with PID 21684 (D:\MeetX\meetx\target\classes started by CHINMAYA in D:\MeetX\meetx)
+2026-01-20 01:36:13.072 [main] INFO  com.videoapp.meetx.MeetxApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-20 01:36:16.607 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-20 01:36:16.637 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:36:16.642 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-20 01:36:16.644 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-20 01:36:16.756 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-20 01:36:16.758 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3558 ms
+2026-01-20 01:36:17.932 [main] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ws/signaling] in 'webSocketHandlerMapping'
+2026-01-20 01:36:18.489 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-01-20 01:36:18.550 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0c05de9d-2c1e-44db-b8e5-b44d324d15e3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-20 01:36:18.568 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-20 01:36:19.425 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-20 01:36:19.467 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-20 01:36:19.508 [main] INFO  com.videoapp.meetx.MeetxApplication - Started MeetxApplication in 7.865 seconds (process running for 9.359)
+2026-01-20 01:36:20.603 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-20 01:36:20.605 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-20 01:36:20.608 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-20 01:37:08.113 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Creating room with name: test
+2026-01-20 01:37:08.120 [http-nio-8080-exec-1] INFO  c.videoapp.meetx.service.RoomService - Created room: cI33OMBDvfTvPsRPV6Om4Q with name: test
+2026-01-20 01:37:08.124 [http-nio-8080-exec-1] INFO  c.v.meetx.controller.RoomController - Room created successfully: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:12.284 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@578c3fd9
+2026-01-20 01:37:12.284 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:37:12.385 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=2facaf7c-9077-8cb2-4953-ad0f74f5662a, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:37:12.385 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: 2facaf7c-9077-8cb2-4953-ad0f74f5662a
+2026-01-20 01:37:12.407 [http-nio-8080-exec-3] INFO  c.v.meetx.service.ParticipantService - Created participant: 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 in room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:12.409 [http-nio-8080-exec-3] INFO  c.videoapp.meetx.service.RoomService - Added participant: 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 to room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:12.432 [http-nio-8080-exec-3] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 joined room cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:23.720 [http-nio-8080-exec-4] INFO  c.v.meetx.controller.RoomController - Joining room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:23.728 [http-nio-8080-exec-4] INFO  c.v.meetx.controller.RoomController - Join token generated for room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:23.974 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@578c3fd9
+2026-01-20 01:37:23.981 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ws/signaling
+2026-01-20 01:37:23.990 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=a1cdbab6-ea39-bb5f-9274-90924b01d395, uri=ws://localhost:8080/ws/signaling]
+2026-01-20 01:37:23.995 [http-nio-8080-exec-5] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection established: a1cdbab6-ea39-bb5f-9274-90924b01d395
+2026-01-20 01:37:24.000 [http-nio-8080-exec-5] INFO  c.v.meetx.service.ParticipantService - Created participant: 008c499a-87e4-41bd-8ec3-f4b8762816d4 in room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:24.000 [http-nio-8080-exec-5] INFO  c.videoapp.meetx.service.RoomService - Added participant: 008c499a-87e4-41bd-8ec3-f4b8762816d4 to room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:37:24.000 [http-nio-8080-exec-5] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 008c499a-87e4-41bd-8ec3-f4b8762816d4 joined room cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:13.560 [http-nio-8080-exec-7] INFO  c.videoapp.meetx.service.RoomService - Removed participant: 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 from room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:13.577 [http-nio-8080-exec-7] INFO  c.v.meetx.service.ParticipantService - Removed participant: 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 from room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:13.586 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 7fd4d6a1-ffdc-4f8a-a488-cc23fa08bcf0 left room cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:13.590 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=2facaf7c-9077-8cb2-4953-ad0f74f5662a, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:39:13.593 [http-nio-8080-exec-7] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: 2facaf7c-9077-8cb2-4953-ad0f74f5662a with status: CloseStatus[code=1000, reason=null]
+2026-01-20 01:39:19.224 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Removed participant: 008c499a-87e4-41bd-8ec3-f4b8762816d4 from room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:19.277 [http-nio-8080-exec-8] INFO  c.videoapp.meetx.service.RoomService - Removed room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:19.279 [http-nio-8080-exec-8] INFO  c.v.meetx.service.ParticipantService - Removed participant: 008c499a-87e4-41bd-8ec3-f4b8762816d4 from room: cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:19.280 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - Participant 008c499a-87e4-41bd-8ec3-f4b8762816d4 left room cI33OMBDvfTvPsRPV6Om4Q
+2026-01-20 01:39:19.282 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=a1cdbab6-ea39-bb5f-9274-90924b01d395, uri=ws://localhost:8080/ws/signaling] closed with CloseStatus[code=1000, reason=null]
+2026-01-20 01:39:19.286 [http-nio-8080-exec-8] INFO  c.v.m.h.SignalingWebSocketHandler - WebSocket connection closed: a1cdbab6-ea39-bb5f-9274-90924b01d395 with status: CloseStatus[code=1000, reason=null]
